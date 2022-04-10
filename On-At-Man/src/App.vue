@@ -1,5 +1,5 @@
 <template>
-
+  <router-view></router-view>
 </template>
 
 
@@ -21,6 +21,10 @@ export default {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+  }
+
+  a{
+    text-decoration: none;
   }
   
 
