@@ -11,7 +11,6 @@
 
 h1{
     color: var(--green-color);
-    position: relative;
 
 }
 
