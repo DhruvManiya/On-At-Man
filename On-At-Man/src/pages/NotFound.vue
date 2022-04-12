@@ -11,15 +11,18 @@
 
 h1{
     color: var(--green-color);
-    margin: auto;
+    position: relative;
+
 }
 
 div{
     display: flex;
     flex-direction: column;
-    margin: 10vh auto;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh auto; 
     width: 70vh;
-    height: auto;
+    height: 70vh;
 
 }
 </style>>
