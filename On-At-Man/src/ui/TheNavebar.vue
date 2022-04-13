@@ -14,6 +14,11 @@
 
 <style scoped>
 
+li:focus ,
+li:active  {
+    background-color: #777;
+}
+
 section{
     display: flex;
     flex-direction: column;
@@ -23,12 +28,15 @@ section{
 li{
     list-style: none; 
     height: 2rem;   
+    padding: 10px;
 }
 
 ul{
     height: 80vh;
     display: flex;
     flex-direction: column ;
+    padding: 0;
+    align-content: center;
 }
 
 .logo{
