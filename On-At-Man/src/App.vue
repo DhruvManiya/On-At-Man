@@ -1,6 +1,8 @@
 <template>
   <div class="container">
-  <the-navebar></the-navebar>
+    <div class="nevbar">
+      <the-navebar></the-navebar>
+    </div>
 
   <router-view></router-view>
   </div>
@@ -37,6 +39,10 @@ export default {
   .container{
     display: flex;
   }
-  
+  .nevbar{
+    background-color: #999;
+    width: 15%;
+    height: 100vh;  
+  }
 
 </style>
