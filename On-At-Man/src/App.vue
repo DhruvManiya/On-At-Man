@@ -1,11 +1,18 @@
 <template>
+  <div class="container">
+  <the-navebar></the-navebar>
+
   <router-view></router-view>
+  </div>
+    
 </template>
 
 
 <script>
+import TheNavebar from './ui/TheNavebar.vue'
 
 export default {
+  components: { TheNavebar },
   
 }
 </script>
@@ -25,6 +32,10 @@ export default {
 
   a{
     text-decoration: none;
+  }
+
+  .container{
+    display: flex;
   }
   
 
