@@ -2,9 +2,9 @@
     <section>
         <router-link to="/attendance"><div class="logo"></div></router-link>
         <ul>
-            <li><router-link to="/profile"> Profile </router-link></li>
-            <li><router-link to="/attendance"> Attendence </router-link></li>
-            <li><router-link to="/addSubject"> Add Subject </router-link></li>
+            <li><router-link to="/profile"><p> Profile </p></router-link></li>
+            <li><router-link to="/attendance"><p> Attendence </p></router-link></li>
+            <li><router-link to="/addSubject"><p> Add Subject </p></router-link></li>
         </ul>
         <div>
            <p> dark mode </p>
@@ -12,11 +12,17 @@
     </section>
 </template>
 
+<script>
+export default {
+    
+}
+</script>
+
 <style scoped>
 
 li:focus ,
 li:active  {
-    background-color: #777;
+    background-color: var(--highlited-li);
 }
 
 section{
@@ -27,8 +33,10 @@ section{
 
 li{
     list-style: none; 
-    height: 2rem;   
-    padding: 10px;
+    height: 2.15rem;   
+    padding: 0.5rem 10%;
+    margin: 0 1rem;
+    border-radius: 1rem;
 }
 
 ul{
@@ -37,6 +45,7 @@ ul{
     flex-direction: column ;
     padding: 0;
     align-content: center;
+    gap: 0.5rem;
 }
 
 .logo{
@@ -47,5 +56,12 @@ ul{
 
 div > p{
     padding-left: 2rem;
+    
+}
+
+p{
+    color: var(--font-color);
+    margin: 0.5rem auto;
+    font-size: 1.25rem;
 }
 </style>
