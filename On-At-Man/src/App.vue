@@ -37,6 +37,7 @@ export default {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--main-background);
     color: var(--font-color);
+    text-shadow: 0 0 0.3rem #c4a85b ;
 
   }
 

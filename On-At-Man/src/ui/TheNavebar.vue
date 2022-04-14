@@ -49,7 +49,7 @@ ul{
 }
 
 .logo{
-    background-image: url(../images/ON_AT-Man-removebg-preview.png);
+    background-image: url(../images/ON-AT-Man.png);
     height: 100px;
     width: 100px;
 }
