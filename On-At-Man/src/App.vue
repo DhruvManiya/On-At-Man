@@ -3,9 +3,9 @@
     <div class="nevbar">
       <the-navebar></the-navebar>
     </div>
-  <div class="main-container">
-  <router-view></router-view>
-  </div>
+    <div class="main-container">
+      <router-view></router-view>
+    </div>
   </div>
     
 </template>
@@ -37,7 +37,7 @@ export default {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--main-background);
     color: var(--font-color);
-    text-shadow: 0 0 0.3rem #c4a85b ;
+    text-shadow: 0 0 0.15rem #c4a85b ;
 
   }
 
@@ -48,13 +48,19 @@ export default {
   .container{
     display: flex;
     gap: 2em;
+    position: relative;
   }
   .nevbar{
     background-color: var(--nav-background);
     width: 15%;
     height: 100vh;  
+    position: fixed;
   }
 
   .main-container{
+    position: absolute;
+    width: 82%;
+    height: auto;
+    right: 0;
   }
 </style>

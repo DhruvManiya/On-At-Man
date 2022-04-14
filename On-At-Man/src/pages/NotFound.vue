@@ -20,8 +20,8 @@ div{
     justify-content: center;
     align-items: center;
     margin: 10vh auto; 
-    width: 70vh;
     height: 70vh;
+
 
 }
 </style>>

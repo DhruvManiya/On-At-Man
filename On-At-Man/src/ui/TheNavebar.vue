@@ -1,10 +1,10 @@
 <template>
     <section>
-        <router-link to="/attendance"><div class="logo"></div></router-link>
+        <div class="logo"><router-link to="/attendance"><img src="../images/ON-AT-Man.png"></router-link></div>
         <ul>
-            <li><router-link to="/profile"><p> Profile </p></router-link></li>
-            <li><router-link to="/attendance"><p> Attendence </p></router-link></li>
-            <li><router-link to="/addSubject"><p> Add Subject </p></router-link></li>
+            <router-link to="/profile"><li> Profile </li></router-link>
+            <router-link to="/attendance"><li> Attendence </li></router-link>
+            <router-link to="/addSubject"><li> Add Subject </li></router-link>
         </ul>
         <div>
            <p> dark mode </p>
@@ -12,11 +12,6 @@
     </section>
 </template>
 
-<script>
-export default {
-    
-}
-</script>
 
 <style scoped>
 
@@ -24,6 +19,11 @@ li:focus ,
 li:active  {
     background-color: var(--highlited-li);
 }
+/* 
+.highlight{
+    background-color: var(--highlited-li);
+
+} */
 
 section{
     display: flex;
@@ -34,7 +34,7 @@ section{
 li{
     list-style: none; 
     height: 2.15rem;   
-    padding: 0.5rem 10%;
+    padding: 1.2rem 10% 0.5rem 10%;
     margin: 0 1rem;
     border-radius: 1rem;
 }
@@ -49,19 +49,29 @@ ul{
 }
 
 .logo{
-    background-image: url(../images/ON-AT-Man.png);
-    height: 100px;
-    width: 100px;
+    height: 10rem;
+    width: 10rem;
+    margin: 0 auto;
+}
+
+img{
+    height: 10rem;
+    width: 10rem;
 }
 
 div > p{
     padding-left: 2rem;
-    
+    color: var(--font-color);
+    font-size: 1.1rem;
+    transform: translateY(-4rem);
 }
 
-p{
+a{
     color: var(--font-color);
-    margin: 0.5rem auto;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+}
+
+a.router-link-exact-active > li{
+    background-color: var(--highlited-li);
 }
 </style>
