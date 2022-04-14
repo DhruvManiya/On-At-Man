@@ -6,13 +6,16 @@
 </div>
 </template>
 
-// <script>
-// export default {
-//     setup() {
+<script>
+export default {
+  created() {
+      if(this.$router.currentRoute._rawValue.name = "notFounded") {
+    console.log(this.$router.currentRoute._rawValue.name + "notFounded"); 
+    }
+  }
 
-//     }
-// }
-// </script>
+};
+</script>
 
 <style  scoped>
 

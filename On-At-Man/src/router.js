@@ -15,7 +15,7 @@ const router = createRouter({
         {path: '/attendance/320/subName' ,component: SubjectSheet},
         {path: '/addSubject' ,component: addSubject },
         {path: '/profile' ,component: MyProfile},
-        {path: '/:notFound(.*)' ,component: notFound},
+        {path: '/:notFound(.*)' ,name:"notFounded" ,component: notFound},
     ]
 });
 

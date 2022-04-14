@@ -37,7 +37,7 @@ li{
     padding: 1.2rem 10% 0.5rem 10%;
     margin: 0 1rem;
     border-radius: 1rem;
-    box-shadow: 0 0 0.2rem var(--box-shadow);
+    box-shadow: 0 0 0.4rem var(--box-shadow);
 
 }
 

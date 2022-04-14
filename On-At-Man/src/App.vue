@@ -16,8 +16,15 @@ import TheNavebar from './ui/TheNavebar.vue'
 
 export default {
   components: { TheNavebar },
-  
+  data() {
+    return{
+
+    }
+  },
+
+
 }
+
 </script>
 
 
@@ -54,11 +61,12 @@ export default {
   .nevbar{
     background-color: var(--background-color);
     width: 15%;
-    height: 100vh;  
+    height: 99vh;  
     position: fixed;
     border-right: 1px solid var(--border-color);
     border-radius: 1rem;
     box-shadow: 0 0 0.8rem var(--box-shadow);
+    transform: translate(0.25rem,0.25rem);
   }
 
   .main-container{
