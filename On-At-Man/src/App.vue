@@ -24,20 +24,21 @@ export default {
 <style>
 
 :root{
+    --border-color: #dddddd;
     --green-color:#52ff01;
-    --font-color:#E99557;
-    --main-background: #F4E6C1;
-    --nav-background: #094456;
-    --highlited-li: rgba(244, 230, 193,0.3);
+    --font-color:#094456;
+    --background-color: rgb(255, 255, 255);
+    --highlited-li: #52ff01;
+    --hovered-li: rgba(2,255,1,0.1);
+    --box-shadow: #999;
   }
   
   body{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--main-background);
+    background-color: var(--background-color);
     color: var(--font-color);
-    text-shadow: 0 0 0.15rem #c4a85b ;
 
   }
 
@@ -51,10 +52,13 @@ export default {
     position: relative;
   }
   .nevbar{
-    background-color: var(--nav-background);
+    background-color: var(--background-color);
     width: 15%;
     height: 100vh;  
     position: fixed;
+    border-right: 1px solid var(--border-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 0.8rem var(--box-shadow);
   }
 
   .main-container{

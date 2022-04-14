@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="logo"><router-link to="/attendance"><img src="../images/ON-AT-Man.png"></router-link></div>
+        <div class="logo"><router-link to="/attendance"><img src="../images/ON_AT-Man-removebg-preview.png"></router-link></div>
         <ul>
             <router-link to="/profile"><li> Profile </li></router-link>
             <router-link to="/attendance"><li> Attendence </li></router-link>
@@ -37,6 +37,8 @@ li{
     padding: 1.2rem 10% 0.5rem 10%;
     margin: 0 1rem;
     border-radius: 1rem;
+    box-shadow: 0 0 0.2rem var(--box-shadow);
+
 }
 
 ul{
@@ -71,7 +73,10 @@ a{
     font-size: 1.1rem;
 }
 
-a.router-link-exact-active > li{
+a.router-link-exact-active > li {
     background-color: var(--highlited-li);
+}
+li:hover{
+    background-color: var(--hovered-li);
 }
 </style>
