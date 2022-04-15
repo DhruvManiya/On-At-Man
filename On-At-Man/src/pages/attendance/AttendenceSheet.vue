@@ -2,7 +2,12 @@
     <section>
         <h1>My Subjects</h1>
         <ul class="all-subjects">
-            <li class="subjects"></li>
+            <li class="subjects">
+                <h3>Subject Name</h3>
+                <div class="description">
+                    <p> Subject Code : 333333 </p> <p>|</p> <p> Subject Name : subject </p> <p>|</p> <p> <em> Enrollment Number : 99999999990 to 99999999999 </em></p>
+                </div>
+            </li>
         </ul>
     </section>
 </template>
@@ -23,11 +28,10 @@ export default {
 <style scoped>
 
 section{
-    width: 100%;
+    width: 100%; 
     height: 100vh;
-    margin-bottom: 0.5rem ;
     box-shadow: 0 0 0.7rem var(--box-shadow);
-    transform: translate(-0.5rem,0.5rem);
+    transform: translateX(-0.5rem);
     border-radius: 1rem;
 }
 
@@ -42,12 +46,25 @@ h1{
 li{
     list-style: none; 
     height: 3.25rem;   
-    padding: 1.2rem 10% 0.5rem 10%;
+    padding: 1rem ;
     margin: 2rem 1.5rem;
     border-radius: 1rem;
     box-shadow: 0 0 0.4rem var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+}
+h3{
+    padding: 0 1rem;
 
 }
 
+.description{
+    display: flex;
+
+}
+
+p{
+    padding: 0.5rem 1rem;
+}
 
 </style>

@@ -84,4 +84,29 @@ export default {
     height: auto;
     right: 0;
   }
+
+  ::-webkit-scrollbar{
+    width: 0.9rem;
+  }
+
+  ::-webkit-scrollbar-track{
+    background: rgb(210, 211, 210);
+    border-radius: 1rem;
+    margin-block: 1em;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background: rgb(126, 126, 126);
+    border-radius: 1.25rem;
+    border: 0.2rem solid rgb(210, 211, 210);
+    
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background: rgb(2,255,1);
+
+  }
+  ::-webkit-scrollbar-track:hover{
+    background: rgba(2,255,1,0.3);
+
+  }
 </style>
