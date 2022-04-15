@@ -76,7 +76,7 @@ export default {
 
   .main-container{
     position: absolute;
-    width: 82%;
+    width: 83%;
     height: auto;
     right: 0;
   }

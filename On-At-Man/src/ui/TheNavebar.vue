@@ -7,7 +7,7 @@
             <router-link to="/addSubject"><li> Add Subject </li></router-link>
         </ul>
         <div>
-           <p> dark mode </p>
+           <p> Dark Mode </p>
         </div>
     </section>
 </template>
