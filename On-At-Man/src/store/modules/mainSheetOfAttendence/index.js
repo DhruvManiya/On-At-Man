@@ -1,7 +1,7 @@
 
 import mutations from './mutation.js';
 import actions from './actions.js';
-import getters from './gatters.js';
+import getters from './getters.js';
 
 
 

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="nevbar">
+    <div class="nevbar" v-if="displayNev">
       <the-navebar></the-navebar>
     </div>
     <div class="main-container">
@@ -21,6 +21,11 @@ export default {
 
     }
   },
+  computed:{
+    displayNev() {
+      return this.$store.state.displayNevbar    
+    }
+  }
 
 
 }

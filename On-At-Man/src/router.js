@@ -11,10 +11,10 @@ const router = createRouter({
     history:createWebHistory(),
     routes:[
         {path:'/' ,redirect:'/attendance'},
-        {path: '/attendance' ,component: Attendence },
-        {path: '/attendance/320/subName' ,component: SubjectSheet},
-        {path: '/addSubject' ,component: addSubject },
-        {path: '/profile' ,component: MyProfile},
+        {path: '/attendance' ,name:"attendance" ,component: Attendence },
+        {path: '/attendance/:subCode/:subName' ,name:"profile" ,component: SubjectSheet},
+        {path: '/addSubject' ,name:"addSubject" ,component: addSubject },
+        {path: '/profile' ,name:"profile" ,component: MyProfile},
         {path: '/:notFound(.*)' ,name:"notFounded" ,component: notFound},
     ]
 });

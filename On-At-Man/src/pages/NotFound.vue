@@ -10,7 +10,7 @@
 export default {
   created() {
       if(this.$router.currentRoute._rawValue.name = "notFounded") {
-    console.log(this.$router.currentRoute._rawValue.name + "notFounded"); 
+    this.$store.state.displayNevbar = false;
     }
   }
 
