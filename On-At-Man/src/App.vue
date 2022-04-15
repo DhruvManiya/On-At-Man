@@ -66,7 +66,7 @@ export default {
     border-right: 1px solid var(--border-color);
     border-radius: 1rem;
     box-shadow: 0 0 0.8rem var(--box-shadow);
-    transform: translate(0.25rem,0.25rem);
+    transform: translate(0.5rem,0.25rem);
   }
 
   .main-container{
