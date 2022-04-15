@@ -65,7 +65,7 @@ div > p{
     padding-left: 2rem;
     color: var(--font-color);
     font-size: 1.1rem;
-    transform: translateY(-4rem);
+    transform: translateY(-5rem);
 }
 
 a{

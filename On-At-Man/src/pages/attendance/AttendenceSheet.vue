@@ -1,5 +1,10 @@
 <template>
-    <p>Attendence</p>
+    <section>
+        <h1>My Subjects</h1>
+        <ul class="all-subjects">
+            <li class="subjects"></li>
+        </ul>
+    </section>
 </template>
 
 
@@ -12,4 +17,37 @@ export default {
   }
 
 };
+
 </script>
+
+<style scoped>
+
+section{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 0.5rem ;
+    box-shadow: 0 0 0.7rem var(--box-shadow);
+    transform: translate(-0.5rem,0.5rem);
+    border-radius: 1rem;
+}
+
+h1{
+    font-size: 8rem;
+    padding: 2rem ;
+    margin: 0.5rem 1rem 1rem 1rem;
+    font-weight: 1;
+    border-bottom: 1px solid var(--border-color);
+}
+
+li{
+    list-style: none; 
+    height: 3.25rem;   
+    padding: 1.2rem 10% 0.5rem 10%;
+    margin: 2rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.4rem var(--box-shadow);
+
+}
+
+
+</style>

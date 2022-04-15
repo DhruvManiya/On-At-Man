@@ -54,6 +54,11 @@ export default {
 
   }
 
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
   a{
     text-decoration: none;
   }
@@ -66,17 +71,16 @@ export default {
   .nevbar{
     background-color: var(--background-color);
     width: 15%;
-    height: 99vh;  
+    height: 98vh;  
     position: fixed;
-    border-right: 1px solid var(--border-color);
     border-radius: 1rem;
-    box-shadow: 0 0 0.8rem var(--box-shadow);
-    transform: translate(0.5rem,0.25rem);
+    box-shadow: 0 0 0.7rem var(--box-shadow);
+    transform: translate(0.5rem,0.5rem);
   }
 
   .main-container{
     position: absolute;
-    width: 83%;
+    width: 82%;
     height: auto;
     right: 0;
   }
