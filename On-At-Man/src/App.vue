@@ -90,7 +90,7 @@ export default {
   }
 
   ::-webkit-scrollbar-track{
-    background: rgb(210, 211, 210);
+    background: transparent;
     border-radius: 1rem;
     margin-block: 1em;
   }

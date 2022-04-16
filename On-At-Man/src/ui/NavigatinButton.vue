@@ -21,6 +21,7 @@ button {
  transition-property: color, background-color, transform;
  cursor: pointer;
  z-index: 1;
+ border-radius: 0.5rem;
 }
 
 button:hover {
@@ -33,6 +34,8 @@ button:hover:before {
  height: 100%;
  top: auto;
  bottom: 0;
+ border-radius: 0.5rem 0.5rem 0 0;
+
 }
 
 button:active {
@@ -52,6 +55,7 @@ button:before {
  z-index: -1;
  background-color: #52ff01;
  transition: height 0.3s ease;
+
 }
 
 </style>

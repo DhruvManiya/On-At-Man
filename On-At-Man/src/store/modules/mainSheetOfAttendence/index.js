@@ -8,7 +8,35 @@ import getters from './getters.js';
 export default {
     namespaced:true,
     state() {
+        return{
+            mySubjects:[
+                {
+                    code: '3140702',
+                    name:'OS(Oprating System)',
+                    numberFrom:'200760107070',
+                    numberTo:'200760107138'
+                },
+                {
+                    code: '3140702',
+                    name:'OS(Oprating System)',
+                    numberFrom:'200760107070',
+                    numberTo:'200760107138'
+                },
+                {
+                    code: '3140702',
+                    name:'OS(Oprating System)',
+                    numberFrom:'200760107070',
+                    numberTo:'200760107138'
+                },
+                {
+                    code: '3140702',
+                    name:'OS(Oprating System)',
+                    numberFrom:'200760107070',
+                    numberTo:'200760107138'
+                }
 
+            ],
+        }
     },
     mutations,
     actions,

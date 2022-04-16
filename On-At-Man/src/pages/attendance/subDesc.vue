@@ -1,15 +1,15 @@
 <template>
     <div class="sub-container">
-        <h3>Subject Name</h3>
+        <h3>{{ subjectName }}</h3>
         <div class="description">
-            <p> Subject Code : 333333 </p> <p>|</p> <p> Subject Name : subject </p> <p>|</p> <p> <em> Enrollment Number : 99999999990 to 99999999999 </em></p>
+            <p> Subject Code : {{ subjectCode }} </p> <p>|</p> <p> Subject Name : {{ subjectName }} </p> <p>|</p> <p> <em> Enrollment Number : {{enrollmentnumberFrom}} to {{enrollmentnumberTo}} </em></p>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    
+    props:['subjectCode','subjectName','enrollmentnumberFrom','enrollmentnumberTo'],
 }
 </script>
 
