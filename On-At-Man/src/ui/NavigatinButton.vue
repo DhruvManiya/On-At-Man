@@ -8,10 +8,10 @@
 button {
  position: relative;
  display: block;
- padding: 0.5rem 1rem 1rem 1.5rem;
- font-size: 48px;
+ padding: 0.1rem 0.5rem 3rem 1rem;
+ font-size: 36px;
  color: #52ff01;
- letter-spacing: 0.2em;
+ letter-spacing: 0.1em;
  text-align: center;
  text-transform: uppercase;
  background-color: transparent;
@@ -21,7 +21,6 @@ button {
  transition-property: color, background-color, transform;
  cursor: pointer;
  z-index: 1;
- 
 }
 
 button:hover {
