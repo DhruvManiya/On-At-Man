@@ -6,12 +6,20 @@
             <router-link to="/attendance"><li> Attendence </li></router-link>
             <router-link to="/addSubject"><li> Add Subject </li></router-link>
         </ul>
-        <div>
+        <div class="mode">
            <p> Dark Mode </p>
+           <toggle-button></toggle-button>
         </div>
     </section>
 </template>
 
+<script>
+import ToggleButton from './ToggleButton.vue'
+export default {
+  components: { ToggleButton },
+    
+}
+</script>
 
 <style scoped>
 
@@ -62,10 +70,9 @@ img{
 }
 
 div > p{
-    padding-left: 2rem;
+    padding: 0 2rem;
     color: var(--font-color);
     font-size: 1.1rem;
-    transform: translateY(-1.5rem);
 }
 
 a{
@@ -78,5 +85,11 @@ a.router-link-exact-active > li {
 }
 li:hover{
     background-color: var(--hovered-li);
+}
+
+.mode{
+    display: flex;
+    transform: translateY(-1.5rem);
+
 }
 </style>
