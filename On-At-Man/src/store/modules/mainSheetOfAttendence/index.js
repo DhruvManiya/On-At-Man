@@ -13,8 +13,8 @@ export default {
                 {
                     code: '3140702',
                     name:'OS(Oprating System)',
-                    numberFrom:'200760107070',
-                    numberTo:'200760107138'
+                    numberFrom:'200760107001',
+                    numberTo:'200760107069'
                 },
                 {
                     code: '3140702',
