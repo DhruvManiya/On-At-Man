@@ -10,6 +10,7 @@
 </template>
 
 <script>
+
     export default {
         data() {
             return{
@@ -36,9 +37,7 @@
   margin: 0;
   transition: background 0.2s linear;
 } */
-body.dark {
-  background-color: #292c35;
-}
+
 .checkbox {
   opacity: 0;
   position: absolute;
@@ -47,7 +46,7 @@ body.dark {
 .label {
   width: 30px;
   height: 15px;
-  background-color:#111;
+  background-color: var(--font-color);
   display: flex;
   border-radius:50px;
   align-items: center;

@@ -35,7 +35,7 @@ export default {
 
 <style>
 
-:root{
+html{
     --border-color: #dddddd;
     --green-color:#52ff01;
     --font-color:#094456;
