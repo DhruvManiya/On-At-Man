@@ -43,7 +43,8 @@ export default {
 <style scoped>
 section {
   width: 100%;
-  height: 100vh;
+  height: auto;
+  padding-bottom: 10vh;
   box-shadow: 0 0 0.7rem var(--box-shadow);
   transform: translateX(-0.5rem);
   border-radius: 1rem;

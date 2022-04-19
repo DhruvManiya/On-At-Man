@@ -9,13 +9,13 @@
         <div class="details">
           <div class="name">
             <label for="first-name"> First Name   : </label>
-            <input type="text" placeholder="First Name" value="Dhruv" disabled>
+            <input type="text" placeholder="First Name" size="10" value="Dhruv" disabled>
             <label for="last-name"> Last Name   : </label>
-            <input type="text" placeholder="Last Name" value="Maniya" disabled>
+            <input type="text" placeholder="Last Name" size="10" value="Maniya" disabled>
           </div>
           <div class="gender">
             <label for="gender"> Gender   : </label>
-            <input type="text" placeholder="gender" value="Male" disabled>
+            <input type="text" placeholder="gender" size="5" value="Male" disabled>
           </div>
           <div class="email">
             <label for="email"> E-mail   : </label>
@@ -23,15 +23,15 @@
           </div>
           <div class="phone-naumber">
             <label for="phone-naumber"> Phone Naumber   : </label>
-            <input type="text" placeholder="Phone Naumberr" value="39514 53254" disabled>
+            <input type="text" placeholder="Phone Naumberr" size="15" value="39514 53254" disabled>
           </div>
           <div class="branch">
             <label for="branch"> Branch   : </label>
-            <input type="text" placeholder="Branch" value="Computer Engineering" disabled>
+            <input type="text" placeholder="Branch" size="15" value="Computer Engineering" disabled>
           </div>
           <div class="college">
             <label for="college"> College   : </label>
-            <input type="text" placeholder="College" value="076 - SHRI SWAMI ATMANAND SARASWATI INSTITUTE OF TECHNOLOGY, SURAT" disabled>
+            <input type="text" placeholder="College" size="70" value="076 - SHRI SWAMI ATMANAND SARASWATI INSTITUTE OF TECHNOLOGY, SURAT" disabled>
           </div>
       </div>
     </section>
@@ -53,7 +53,8 @@ export default {
 
 .profile {
   width: 100%;
-  height: 100vh;
+  height: auto;
+  padding-bottom: 10vh;
   box-shadow: 0 0 0.7rem var(--box-shadow);
   transform: translateX(-0.5rem);
   border-radius: 1rem;
