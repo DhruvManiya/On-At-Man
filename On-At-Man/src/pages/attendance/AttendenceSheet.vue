@@ -47,6 +47,7 @@ section {
   box-shadow: 0 0 0.7rem var(--box-shadow);
   transform: translateX(-0.5rem);
   border-radius: 1rem;
+  margin: 0.5rem 0;
 }
 
 h1 {
@@ -54,7 +55,7 @@ h1 {
   padding: 2rem;
   margin: 0.5rem 1rem 1rem 1rem;
   font-weight: 1;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--green-color);
 }
 
 li {

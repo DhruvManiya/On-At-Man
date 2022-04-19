@@ -21,7 +21,7 @@ export default {
 }
 h3{
     padding: 0 1rem 0.25rem 1rem;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--green-color);
 }
 
 .description{
