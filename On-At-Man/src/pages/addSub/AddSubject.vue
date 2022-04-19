@@ -28,7 +28,7 @@ export default {
 
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 0.75rem;
   margin: 0.5rem 1rem 1rem 1rem;
   font-weight: 1;
