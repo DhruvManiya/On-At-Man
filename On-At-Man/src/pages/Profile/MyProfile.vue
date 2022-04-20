@@ -55,10 +55,10 @@ export default {
   width: 100%;
   height: auto;
   padding-bottom: 10vh;
-  box-shadow: 0 0 0.7rem var(--box-shadow);
   transform: translateX(-0.5rem);
   border-radius: 1rem;
   margin: 0.5rem 0;
+  background-color: var(--section-background);
 
 }
 
@@ -69,7 +69,7 @@ section{
 
 h1 {
   font-size: 4rem;
-  padding: 0.75rem;
+  padding: 1rem;
   margin: 0.5rem 1rem 1rem 1rem;
   font-weight: 1;
   border-bottom: 1px solid var(--green-color);
@@ -77,9 +77,10 @@ h1 {
 
 
 input{
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.5rem;
   border: none;
   border-bottom: 1px solid var(--green-color);
+  background: transparent;
 
   
 }
@@ -88,6 +89,7 @@ input:disabled{
   -webkit-user-select: none; 
   -ms-user-select: none;
   user-select: none;
+  color: var(--font-color);
 
 }
 

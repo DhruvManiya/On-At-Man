@@ -38,11 +38,13 @@ export default {
 html{
     --border-color: #dddddd;
     --green-color:#52ff01;
-    --font-color:#094456;
-    --background-color: rgb(255, 255, 255);
+    --font-color:#dddcdc;
+    --background-color: #181818;
     --highlited-li: #52ff01;
     --hovered-li: rgba(2,255,1,0.1);
-    --box-shadow: #999;
+    --section-background: #212121;
+    --li-background:#303030;
+    --box-shadow: rgba(0,0,0,0.3);
   }
   
   body{
@@ -74,7 +76,7 @@ html{
   .nevbar{
     background-color: var(--background-color);
     width: 15%;
-    height: 98vh;  
+    height: 96vh;  
     position: fixed;
     border-radius: 1rem;
     box-shadow: 0 0 0.7rem var(--box-shadow);

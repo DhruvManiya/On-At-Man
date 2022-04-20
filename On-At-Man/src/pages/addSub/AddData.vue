@@ -42,14 +42,16 @@ export default{
   },
   methods:{
     submitFrom() {
-      const formData = {
-        code:this.code,
-        name:this.name,
-        numberFrom:this.numberFrom,
-        numberTo:this.numberTo,
-      };
-      this.$emit('save-data',formData);
-    },
+            const formData = {
+                code:this.code,
+                name:this.name,
+                numberFrom:this.numberFrom,
+                numberTo:this.numberTo,
+            };
+            this.$emit('save-data',formData);
+        
+        
+    }
     
   }
 
@@ -63,6 +65,8 @@ input{
   padding-bottom: 0.25rem;
   border: none;
   border-bottom: 1px solid var(--green-color); 
+  background-color: transparent;
+  color: var(--font-color);
 }
 
 .form-container{

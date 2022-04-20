@@ -45,10 +45,12 @@ section {
   width: 100%;
   height: auto;
   padding-bottom: 10vh;
-  box-shadow: 0 0 0.7rem var(--box-shadow);
   transform: translateX(-0.5rem);
   border-radius: 1rem;
   margin: 0.5rem 0;
+  background-color: var(--section-background);
+  box-shadow: 0 0 0.5rem var(--box-shadow);
+
 }
 
 h1 {
@@ -65,8 +67,10 @@ li {
   padding: 1rem;
   margin: 2rem 1.5rem;
   border-radius: 1rem;
-  box-shadow: 0 0 0.4rem var(--box-shadow);
   display: flex;
   justify-content: space-between;
+  background-color: var(--li-background);
+  box-shadow: 0 0 0.5rem var(--box-shadow);
+
 }
 </style>

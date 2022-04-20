@@ -40,6 +40,7 @@ div{
     height: 100vh;
     position: absolute;
     width: 80%;
+    background-color: var(--background-color);
 
 
 }
