@@ -32,7 +32,7 @@ export default {
   },
   computed: {
     subjects() {
-      return this.$store.getters['mainSheetOfAttendenc/mySubjects'];
+      return this.$store.getters['addSubject/mySubjects'];
     },
   },
   
