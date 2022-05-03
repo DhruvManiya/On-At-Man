@@ -8,7 +8,7 @@
 button {
  position: relative;
  display: block;
- padding: 0.1rem 0.5rem 3rem 1rem;
+ padding: 0.1rem 0.5rem 0.4rem 1rem;
  font-size: 36px;
  color: #52ff01;
  letter-spacing: 0.1em;

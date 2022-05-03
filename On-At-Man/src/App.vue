@@ -44,6 +44,9 @@ html{
     --hovered-li: rgba(2,255,1,0.1);
     --section-background: #212121;
     --li-background:#303030;
+    --li-first-background:#272727;
+    --li-even-background:#303030;
+    --li-odd-background:#404040;
     --box-shadow: rgba(0,0,0,0.3);
   }
   

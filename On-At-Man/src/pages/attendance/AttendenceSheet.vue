@@ -9,7 +9,9 @@
           :enrollmentnumberFrom="subject.numberFrom"
           :enrollmentnumberTo="subject.numberTo"
         ></sub-desc>
-        <navigatin-button></navigatin-button>
+        <router-link :to="'/attendance/'+subject.code+'/'+subject.name+'/'+subject.numberFrom+'/'+subject.numberTo" >
+          <navigatin-button></navigatin-button>
+        </router-link>
       </li>
     </ul>
   </section>

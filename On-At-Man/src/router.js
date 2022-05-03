@@ -12,7 +12,7 @@ const router = createRouter({
     routes:[
         {path:'/' ,redirect:'/attendance'},
         {path: '/attendance' ,name:"attendance" ,component: Attendence },
-        {path: '/attendance/:subCode/:subName' ,name:"profile" ,component: SubjectSheet},
+        {path: '/attendance/:subCode/:subName/:numFrom/:numTo' ,name:"sheet" ,component: SubjectSheet},
         {path: '/addSubject' ,name:"addSubject" ,component: addSubject },
         {path: '/profile' ,name:"profile" ,component: MyProfile},
         {path: '/:notFound(.*)' ,name:"notFounded" ,component: notFound},

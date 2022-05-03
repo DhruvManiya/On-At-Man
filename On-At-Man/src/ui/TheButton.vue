@@ -1,6 +1,12 @@
 <template>
-    <button> Submit </button>
+    <button> {{name}} </button>
 </template>
+
+<script>
+export default {
+    props:['name']
+}
+</script>
 
 <style scoped>
 /* From uiverse.io by @alexroumi */

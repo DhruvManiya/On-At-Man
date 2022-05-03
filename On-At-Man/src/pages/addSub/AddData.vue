@@ -21,7 +21,7 @@
               <input type="number" id="numberTo" v-model="numberTo">
             </div>
             <div class="submit-button">
-            <the-button></the-button>
+            <the-button name="Submit"></the-button>
             </div>
           </div>
         </form>
