@@ -21,7 +21,7 @@ export default {
   },
   methods:{
     saveData(data){
-      this.$store.dispatch('addSubject/registerSubject',data)
+      this.$store.dispatch('addSubject/registerSubject',data);
       this.$router.replace('/attendance')
     }
   }
