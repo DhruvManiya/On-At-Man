@@ -56,7 +56,7 @@ section {
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 6rem;
   padding: 2rem;
   margin: 0.5rem 1rem 1rem 1rem;
   font-weight: 1;
@@ -65,7 +65,7 @@ h1 {
 
 li {
   list-style: none;
-  height: 3.25rem;
+  height: auto;
   padding: 1rem;
   margin: 2rem 1.5rem;
   border-radius: 1rem;
@@ -81,5 +81,17 @@ li {
     margin-left: 0.95rem;
     width: 99%;
   }
+}
+
+@media screen and (max-width: 750px){
+  
+h1 {
+  font-size: 3rem;
+}
+
+section{
+  margin-left: 0.6rem;
+  }
+
 }
 </style>

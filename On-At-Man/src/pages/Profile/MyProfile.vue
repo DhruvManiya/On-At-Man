@@ -8,33 +8,33 @@
       </div>
         <div class="details">
           <div class="name">
-            <div>
-              <label for="first-name"> First Name   : </label>
+            <div class="first-name">
+              <label for="first-name"> First Name : </label>
               <input type="text" placeholder="First Name" size="5" value="Dhruv" disabled>
             </div>
-            <div>
-              <label for="last-name"> Last Name   : </label>
+            <div class="last-name">
+              <label for="last-name"> Last Name : </label>
               <input type="text" placeholder="Last Name" size="5" value="Maniya" disabled>
             </div>
           </div>
           <div class="gender">
-            <label for="gender"> Gender   : </label>
+            <label for="gender"> Gender : </label>
             <input type="text" placeholder="gender" size="5" value="Male" disabled>
           </div>
           <div class="email">
-            <label for="email"> E-mail   : </label>
+            <label for="email"> E-mail : </label>
             <input type="email" placeholder="email" value="dhruvmaniya12@gmail.com" disabled>
           </div>
           <div class="phone-naumber">
-            <label for="phone-naumber"> Phone Naumber   : </label>
+            <label for="phone-naumber"> Phone Naumber : </label>
             <input type="text" placeholder="Phone Naumberr" size="15" value="39514 53254" disabled>
           </div>
           <div class="branch">
-            <label for="branch"> Branch   : </label>
+            <label for="branch"> Branch : </label>
             <input type="text" placeholder="Branch" size="15" value="Computer Engineering" disabled>
           </div>
           <div class="college">
-            <label for="college"> College   : </label>
+            <label for="college"> College : </label>
             <input type="text" placeholder="College"  value="076 - SHRI SWAMI ATMANAND SARASWATI INSTITUTE OF TECHNOLOGY, SURAT" disabled>
           </div>
       </div>
@@ -137,7 +137,7 @@ img{
 }
 
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1200px){
   .profile{
     margin-left: 0.95rem;
     width: 99%;
@@ -156,7 +156,7 @@ img{
 }
 
 }
-
+/* 
 @media screen and (max-width: 950px){
   .photo{
   padding-left: 2%;
@@ -171,10 +171,66 @@ img{
 
 }
 
+.first-name{
+  padding-bottom: 1rem;
+}
+
+} */
+
+@media screen and (max-width: 750px){
+
+.name,
+.gender,
+.email,
+.phone-naumber,
+.branch,
+.college{
+  margin-bottom: 1.5rem;
+}
+
+
 .name {
   display: flex;
   flex-direction: column;
 }
 
+
+.first-name{
+  margin-bottom: 1rem;
 }
+
+
+}
+
+@media screen and (max-width: 600px){
+
+
+.name,
+.gender,
+.email,
+.phone-naumber,
+.branch,
+.college{
+  margin-bottom: 1.5rem;
+}
+
+
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details{
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+
+}
+
 </style>
