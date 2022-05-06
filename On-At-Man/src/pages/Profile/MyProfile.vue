@@ -8,10 +8,14 @@
       </div>
         <div class="details">
           <div class="name">
-            <label for="first-name"> First Name   : </label>
-            <input type="text" placeholder="First Name" size="10" value="Dhruv" disabled>
-            <label for="last-name"> Last Name   : </label>
-            <input type="text" placeholder="Last Name" size="10" value="Maniya" disabled>
+            <div>
+              <label for="first-name"> First Name   : </label>
+              <input type="text" placeholder="First Name" size="5" value="Dhruv" disabled>
+            </div>
+            <div>
+              <label for="last-name"> Last Name   : </label>
+              <input type="text" placeholder="Last Name" size="5" value="Maniya" disabled>
+            </div>
           </div>
           <div class="gender">
             <label for="gender"> Gender   : </label>
@@ -31,7 +35,7 @@
           </div>
           <div class="college">
             <label for="college"> College   : </label>
-            <input type="text" placeholder="College" size="70" value="076 - SHRI SWAMI ATMANAND SARASWATI INSTITUTE OF TECHNOLOGY, SURAT" disabled>
+            <input type="text" placeholder="College"  value="076 - SHRI SWAMI ATMANAND SARASWATI INSTITUTE OF TECHNOLOGY, SURAT" disabled>
           </div>
       </div>
     </section>
@@ -127,8 +131,50 @@ img{
   margin-bottom: 3rem;
 }
 
-.college{
-  size: 50;
+.college > input{
+  width: 100%;
+
 }
 
+
+@media screen and (max-width: 1400px){
+  .profile{
+    margin-left: 0.95rem;
+    width: 99%;
+  }
+
+  img{
+  height: 10rem;
+  width: 10rem;
+  padding: 0.10rem;
+  
+}
+
+.photo{
+  padding-left: 5%;
+  margin: 1.5rem 0;
+}
+
+}
+
+@media screen and (max-width: 950px){
+  .photo{
+  padding-left: 2%;
+  margin: 0.5rem 0;
+
+
+}
+
+  img{
+  height: 7rem;
+  width: 7rem;
+
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+}
+
+}
 </style>

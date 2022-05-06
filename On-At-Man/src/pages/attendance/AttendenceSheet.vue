@@ -75,4 +75,11 @@ li {
   box-shadow: 0 0 0.5rem var(--box-shadow);
 
 }
+
+@media screen and (max-width: 1400px){
+  section{
+    margin-left: 0.95rem;
+    width: 99%;
+  }
+}
 </style>

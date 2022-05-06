@@ -192,4 +192,11 @@ li:nth-child(odd) {
   justify-content: center;
   padding-top: 1.5rem;
 }
+
+@media screen and (max-width: 1400px){
+  section{
+    margin-left: 0.95rem;
+    width: 99%;
+  }
+}
 </style>

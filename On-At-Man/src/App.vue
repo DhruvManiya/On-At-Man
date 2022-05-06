@@ -84,6 +84,7 @@ html{
     border-radius: 1rem;
     box-shadow: 0 0 0.7rem var(--box-shadow);
     transform: translate(0.5rem,0.5rem);
+
   }
 
   .main-container{
@@ -116,5 +117,17 @@ html{
   ::-webkit-scrollbar-track:hover{
     background: rgba(2,255,1,0.3);
 
+  }
+
+  @media screen and (max-width: 1400px) {
+  
+  .nevbar{
+    display: none;
+  }
+
+  .main-container{
+    width: 100%;
+
+  }
   }
 </style>
