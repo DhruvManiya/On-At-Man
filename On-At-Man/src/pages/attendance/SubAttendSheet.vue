@@ -23,7 +23,7 @@
         <li v-for="number in numbers" :key="number">
           <h3>{{ number }}</h3>
           <div class="mark-container">
-            <span><div class="absent check-mark">+</div></span>
+            <span><div class="absent check-mark">X</div></span>
             <span><div class="present check-mark">✓</div></span>
             
           </div>
@@ -144,7 +144,13 @@ li {
 
 h3{
   padding-left: 10rem;
+  display: flex;
 }
+
+h3 > p{
+    padding: 0 0.35rem 0 0 ;
+}
+
 
 span{
   padding-right: 5rem;

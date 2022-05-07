@@ -1,11 +1,13 @@
 <template>
   <div class="container">
+    <logo-bar></logo-bar>
     <div class="nevbar" v-if="displayNev">
       <the-navebar></the-navebar>
     </div>
     <div class="main-container">
       <router-view></router-view>
     </div>
+    <responsive-nevbar></responsive-nevbar>
   </div>
     
 </template>
@@ -13,9 +15,11 @@
 
 <script>
 import TheNavebar from './ui/TheNavebar.vue'
+import LogoBar from './ui/LogoBar.vue'
+import ResponsiveNevbar from './ui/ResponsiveNevbar.vue'
 
 export default {
-  components: { TheNavebar },
+  components: { TheNavebar, LogoBar, ResponsiveNevbar },
   data() {
     return{
 
@@ -48,6 +52,7 @@ html{
     --li-even-background:#303030;
     --li-odd-background:#404040;
     --box-shadow: rgba(0,0,0,0.3);
+    --background-res-color: #191919;
   }
   
   body{
@@ -129,5 +134,16 @@ html{
     width: 100%;
 
   }
+
+  .main-container{
+    margin-top: 3.25rem;
   }
+
+  }
+  @media screen and (max-width: 600px){
+    body{
+      font-size: 0.8rem;
+    }
+  }
+
 </style>
