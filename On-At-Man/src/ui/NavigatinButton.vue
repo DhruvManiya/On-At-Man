@@ -58,4 +58,13 @@ button:before {
 
 }
 
+@media screen and (max-width: 412px){
+    button{
+
+        padding: 0.1rem 0.5rem 0.4rem 0.75rem;
+        font-size: 24px;
+        margin-top: 1rem;
+    }
+}
+
 </style>

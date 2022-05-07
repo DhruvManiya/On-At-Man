@@ -3,22 +3,23 @@
           <div class="form-container">
             <p class="error" v-if="subCode">Enter Subject Code</p>
             <div class="form-control">
-              <label for="code">Subject Code *</label>
-              <input type="number" id="code" v-model="code">
+              <label for="code" class="display-sub-normal">Subject Code *</label>
+              <input type="number" id="code" placeholder="Subject Code *" v-model="code">
             </div>
             <p class="error" v-if="subName">Enter Subject Name</p>
             <div class="form-control">
-              <label for="name">Subject Name *</label>
-              <input type="text" id="name" v-model="name">
+              <label for="name" class="display-sub-normal">Subject Name *</label>
+              <input type="text" id="name" placeholder="Subject Name*" v-model="name">
             </div>
             <p class="error" v-if="stuNumFrom">Enter Your Starting Number</p>
             <p class="error" v-if="stuNumTo">Enter Your Ending Number</p>
             <p class="error" v-if="numberCompare">Your Ending Number Should be Gretterthan your Starting Number</p>
             <div class="form-control enroll">
-              <label for="numberFrom">enrollment number From *</label>
-              <input type="number" id="numberFrom" v-model="numberFrom">
-              <label for="numberTo">to *</label>
-              <input type="number" id="numberTo" v-model="numberTo">
+              <label for="numberFrom" class="display-responsive display-mo-responsive">Number* </label>
+              <label for="numberFrom" class="display-normal ">Enrollment Number From *</label>
+              <input type="number" id="numberFrom" placeholder="Enrollment Number From*" v-model="numberFrom">
+              <label for="numberTo" class="display-mo-responsive">To </label>
+              <input type="number" id="numberTo" placeholder="Enrollment Number To*" v-model="numberTo">
             </div>
             <div class="submit-button">
             <the-button name="Submit"></the-button>
@@ -123,6 +124,74 @@ label{
 .error{
   margin: 0 0 0.5rem 2.5rem;
   color: rgb(255, 41, 41);
+}
+
+.enroll{
+  display: flex;
+}
+
+.enroll > input{
+  overflow: hidden;
+}
+
+input::placeholder {
+  color: var(--section-background);
+}
+
+input:hover{
+  background-color: transparent;
+}
+
+.display-normal{
+  display: block;
+}
+
+.display-responsive{
+  display: none;
+}
+
+@media screen and (max-width: 900px){
+.display-normal{
+  display: none;
+}
+
+.display-responsive{
+  display: block;
+}
+
+.enroll > input::placeholder {
+  color: #999;
+}
+
+}
+
+@media screen and (max-width: 650px){
+  input::placeholder {
+  color: #999;
+}
+
+.display-sub-normal{
+  display: none;
+}
+
+.display-mo-responsive{
+  display: none;
+}
+
+.enroll{
+  flex-direction: column;
+}
+
+.enroll > input{
+  margin-bottom: 2rem;
+}
+
+.error{
+  margin-left: 0rem;
+
+}
+
+
 }
 
 </style>

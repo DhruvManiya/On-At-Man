@@ -76,7 +76,7 @@ li {
 
 }
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1250px){
   section{
     margin-left: 0.95rem;
     width: 99%;

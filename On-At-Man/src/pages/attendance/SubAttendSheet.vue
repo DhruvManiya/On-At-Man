@@ -1,9 +1,11 @@
 <template>
   <section>
     <div class="header">
-      <h1>{{ subName }}</h1>
+      <div class="responsive-container">
+        <h1>{{ subName }}</h1><p class="display-responsive"> {{ subCode }} </p> <p></p>
+      </div>
       <div class="header-number">
-            <p> Subject Code : {{ subCode }} </p> <p>|</p> <p> <em> Enrollment Number : {{numFrom}} to {{numTo}} </em></p>  
+            <p class="display-normal"> Subject Code : {{ subCode }} </p> <p class="display-normal">|</p> <p> <em> <p class="display-en-normal">Enrollment Number :</p> {{numFrom}} to {{numTo}} </em></p>  
       </div>
     </div>
     <div class="taker" v-if="showSheetIf">
@@ -12,7 +14,7 @@
     </div>
       <div v-else>
         <li>
-          <h3>Enrollment Number</h3>
+          <h3><p class="display-li-en-normal">Enrollment </p> Number</h3>
           <div>
             <span>Absant</span>
             <span>Prasent</span>
@@ -92,9 +94,14 @@ section {
   margin: 0.5rem 1rem 1rem 1rem;
   border-bottom: 1px solid var(--green-color);
 }
+.responsive-container{
+  display: flex;
+  padding: 0 1rem 0.25rem 1rem;
+}
+
 
 h1 {
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: 1;
 }
 
@@ -112,6 +119,15 @@ p{
   flex-direction: column;
   align-items: center;
 }
+
+em{
+    display: flex;
+}
+
+em > p{
+    padding: 0;
+}
+
 
 li {
   list-style: none;
@@ -193,10 +209,113 @@ li:nth-child(odd) {
   padding-top: 1.5rem;
 }
 
-@media screen and (max-width: 1400px){
+.display-responsive{
+padding-top: 4.5rem;
+display: none;
+
+}
+
+.display-normal,
+.display-en-normal{
+    display: block;
+}
+
+@media screen and (max-width: 1250px){
   section{
     margin-left: 0.95rem;
     width: 99%;
   }
 }
+
+@media screen and (max-width: 775px){
+  
+.display-responsive{
+display: block;
+
+}
+
+h3{
+  padding-left: 5rem;
+}
+
+span{
+  padding-right: 3rem;
+}
+
+.mark-container{
+  justify-content: center;
+  width: 13rem;
+}
+
+
+.display-normal{
+  display: none;
+}
+}
+
+@media screen and (max-width: 550px){
+.display-en-normal{
+  display: none;
+}
+
+.header{
+  padding: 2rem 2rem 1rem 0.5rem;
+  margin: 0.5rem 1rem 1rem 0rem;
+}
+
+
+h1 {
+  font-size: 3.5rem;
+}
+
+.display-responsive{
+padding-top: 2rem;
+
+}
+
+
+h3{
+  padding-left: 2rem;
+}
+
+span{
+  padding-right: 1.5rem;
+}
+
+.mark-container{
+  width: 10rem;
+}
+
+
+}
+
+@media screen and (max-width: 400px){
+  
+h3{
+  padding-left: 0.5rem;
+}
+
+span{
+  padding-right: 0.75rem;
+}
+
+.mark-container{
+  width: 8rem;
+}
+
+li{
+  padding: 0.5rem;
+  height: 2rem;
+}
+
+.display-li-en-normal{
+  display: none;
+}
+
+.check-mark{
+  height: 1.5rem;
+  width: 1.5rem;
+}
+}
+
 </style>

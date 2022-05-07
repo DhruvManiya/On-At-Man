@@ -4,7 +4,7 @@
             <h3>{{ subjectName }} </h3><p class="display-responsive">{{ subjectCode }} </p> 
         </div>
         <div class="description">
-            <p class="display-normal"> Subject Code : {{ subjectCode }} </p> <p class="display-normal">|</p> <p class="display-en-normal"> Subject Name : {{ subjectName }} </p> <p class="display-normal">|</p> <p> <em> <p class="display-normal">Enrollment Number :</p> {{enrollmentnumberFrom}} to {{enrollmentnumberTo}} </em></p>
+            <p class="display-normal"> Subject Code : {{ subjectCode }} </p> <p class="display-normal">|</p> <p class="display-normal"> Subject Name : {{ subjectName }} </p> <p class="display-normal">|</p> <p> <em> <p class="display-en-normal">Enrollment Number :</p> {{enrollmentnumberFrom}} to {{enrollmentnumberTo}} </em></p>
         </div>
     </div>
 </template>
@@ -52,7 +52,7 @@ em > p{
     display: none;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1050px){
 
 .display-normal{
     display: none;
@@ -74,4 +74,10 @@ em > p{
 }
 }
 
+@media screen and (max-width: 412px){
+.responsive-container{
+    width: 80%;
+}
+
+}
 </style>

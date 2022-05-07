@@ -49,11 +49,24 @@ h1 {
   border-bottom: 1px solid var(--green-color);
 }
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1250px){
   section{
     margin-left: 0.95rem;
     width: 99%;
   }
 }
+
+@media screen and (max-width: 650px){
+  h1{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 460px){
+  h1{
+    font-size: 1.40rem;
+  }
+}
+
 
 </style>
