@@ -13,9 +13,9 @@ const router = createRouter({
         {path:'/' ,redirect:'/attendance'},
         {path: '/attendance' ,name:"attendance" ,component: Attendence },
         {path: '/attendance/:subCode/:subName/:numFrom/:numTo' ,name:"sheet" ,component: SubjectSheet},
-        {path: '/addSubject' ,name:"addSubject" ,component: addSubject },
+        {path: '/addSubject' ,name:"addSubject" ,component: AddSubject },
         {path: '/profile' ,name:"profile" ,component: MyProfile},
-        {path: '/:notFound(.*)' ,name:"notFounded" ,component: notFound},
+        {path: '/:notFound(.*)' ,name:"notFounded" ,component: NotFound},
     ]
 });
 
