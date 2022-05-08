@@ -3,7 +3,7 @@ import { createRouter,createWebHistory} from 'vue-router';
 import Attendence from './pages/attendance/AttendenceSheet.vue'
 import SubjectSheet from './pages/attendance/SubAttendSheet.vue'
 import MyProfile from './pages/Profile/MyProfile.vue'
-import AddSubject from './pages/addSub/addSubject.vue'
+import AddSubject from './pages/addSub/AddSubject.vue'
 
 import NotFound from './pages/NotFound.vue'
 
