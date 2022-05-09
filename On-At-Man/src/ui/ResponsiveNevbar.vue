@@ -20,7 +20,7 @@ section{
     height: 3.5rem;
     z-index: 3;
     width: 100%;
-    background-color: var(--background-res-color);
+    background-color: var(--section-background);
     border-radius:  0.5rem 0.5rem 0 0 ;
 
 }
@@ -33,7 +33,7 @@ li{
     width: 100%;   
     padding: 0.8rem 0 0.8rem 1rem;
     border-radius: 1rem;
-    box-shadow: 0 0 0.5rem var(--box-shadow);
+
     
 
 }
@@ -47,6 +47,7 @@ li:active  {
 a.router-link-exact-active > li {
     background-color: var(--li-background);
     color: var(--green-color);
+    box-shadow: 0 0 0.5rem var(--box-shadow);
 }
 
 .display-responsive{

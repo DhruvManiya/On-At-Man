@@ -19,7 +19,7 @@ section{
     height: 3.5rem;
     z-index: 3;
     width: 100%;
-    background-color: var(--background-res-color);
+    background-color: var(--section-background);
     border-radius: 0 0 0.5rem 0.5rem ;
 
 }
