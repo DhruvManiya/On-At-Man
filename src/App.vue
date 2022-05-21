@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <logo-bar></logo-bar>
-    <div class="nevbar" v-if="displayNev">
+    <div class="nevbar" :class="{ displayNev : !nevbarDisplay }">
       <the-navebar></the-navebar>
     </div>
-    <div class="main-container">
+    <div class="main-container" :class="{ fullSection : !nevbarDisplay }">
       <router-view></router-view>
     </div>
     <responsive-nevbar></responsive-nevbar>
@@ -26,7 +26,7 @@ export default {
     }
   },
   computed:{
-    displayNev() {
+    nevbarDisplay() {
       return this.$store.state.displayNevbar    
     }
   }
@@ -91,12 +91,19 @@ html{
     transform: translate(0.5rem,0.5rem);
 
   }
+  .displayNev{
+    display: none;
+  }  
 
   .main-container{
     position: absolute;
     width: 82%;
     height: auto;
     right: 0;
+  }
+
+  .fullSection{
+    width: 100%;
   }
 
   ::-webkit-scrollbar{

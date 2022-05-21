@@ -43,7 +43,7 @@ button::before {
 }
 
 button:hover {
- color: #e8e8e8;
+ color: #333;
 }
 
 button:hover::before {
