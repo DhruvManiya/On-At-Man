@@ -1,7 +1,7 @@
 <template>
     <form @submit.prevent="submitFrom">
           <div class="form-container">
-            <p class="error" v-if="subCode">Enter Faculty ID</p>
+            <p class="error" v-if="facultyId">Enter Faculty ID</p>
             <div class="form-control">
 
               <input type="number" id="code" placeholder="Faculty ID*" v-model="id">
@@ -14,9 +14,6 @@
             <p class="error" v-if="stuNumFrom">Branch</p>
             <div class="form-control enroll">
 
-              <input type="text" id="numberFrom" placeholder="Branch*" v-model="branch">
-
-              <input type="text" id="numberTo" placeholder="Enrollment Number To*" v-model="numberTo">
             </div>
             <div class="submit-button">
             <the-button name="Sign Up"></the-button>
@@ -27,6 +24,8 @@
 
 <script>
 import TheButton from "../../ui/TheButton.vue";
+// import axios from 'axios';
+
 
 export default{
 
@@ -42,37 +41,63 @@ export default{
       branch:'',
       numberTo:'',
       subName:false,
-      subCode:false,
+      facultyId:false,
       stuNumFrom:false,
       stuNumTo:false,
-      numberCompare:false
+      numberCompare:false,
+      signUpData:{'dfa':'asds'}
     }
   },
+
+    // async created() {
+    //   try {
+    //     const res = await axios.get('https://on-at-man-default-rtdb.firebaseio.com/surveys.json');
+    //     console.log(res);
+    //   } catch (error) {
+    //     console.log(error)
+    //   }
+    // },
+
   methods:{
+
     submitFrom() {
-      if(this.code === null) { 
-        this.subCode = true
+      if(this.id === null) { 
+        this.facultyId = true
       }
-      else if (this.name === '') {
-        this.subName = true
-      }
-      else if (this.numberFrom === null) {
-        this.stuNumFrom = true
-      }
-      else if (this.numberTo === null) {
-        this.stuNumTo = true
-      }
-      else if (this.numberFrom >= this.numberTo ) {
-        this.numberCompare = true
-      }
+      // else if (this.name === '') {
+      //   this.subName = true
+      // }
+      // else if (this.numberFrom === null) {
+      //   this.stuNumFrom = true
+      // }
+      // else if (this.numberTo === null) {
+      //   this.stuNumTo = true
+      // }
+      // else if (this.numberFrom >= this.numberTo ) {
+      //   this.numberCompare = true
+      // }
       else{
-            const formData = {
+            const facultyData = {
                 code:this.code,
                 name:this.name,
                 numberFrom:this.numberFrom,
                 numberTo:this.numberTo,
             };
-            this.$emit('save-data',formData);
+          // this.signUpData = facultyData;
+          try {
+            const res = fetch('https://vue-http-demo-7060c-default-rtdb.firebaseio.com/surveys.json',{
+              method:'POST',
+              headers:{
+                'Content-Type' : 'aplication/json'
+              },
+              data:{
+                'Dhruv' : 'Name'
+              }
+            });
+            console.log(res);
+          } catch (e) {
+            console.log(e);
+          }
           }
         
     }
