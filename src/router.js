@@ -12,7 +12,7 @@ import NotFound from './pages/NotFound.vue'
 const router = createRouter({
     history:createWebHistory(),
     routes:[
-        {path:'/' ,redirect:'/sign-in-up'},
+        {path:'/' ,redirect:'/attendance'},
         {path: '/sign-in-up' ,name:"SignInUp" ,component: SignInUp },
         {path: '/attendance' ,name:"attendance" ,component: Attendence },
         {path: '/attendance/:subCode/:subName/:numFrom/:numTo' ,name:"sheet" ,component: SubjectSheet},
